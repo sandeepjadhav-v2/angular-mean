@@ -1,0 +1,74 @@
+.pull-right{
+  float: right;
+}
+
+.logo{
+  width: 100px;
+}
+
+.global-search-container {
+  width: 50%;
+  padding-top: 9px;
+  .input-group{
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 2px;
+    height: 30px;
+    .global-search-field{
+      background-color: transparent;
+      border-color: transparent;
+      border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+      font-size: 13px;
+      height: 30px;
+    }
+    .global-search-field:focus, .global-search-field:focus{
+      background-color: #fff;
+      border-color: #dedfe0;
+      border-right-color: transparent;
+      box-shadow: none;
+    }
+    .input-group-append{
+       height: 30px;
+      .input-group-text{
+        background-color: transparent;
+        border-color: transparent;
+      }
+      .global-search-icon{
+        color: #ec5252;
+      }
+    }
+  }
+}
+
+
+ul.header-notification-container{
+  list-style-type: none;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+  li.notification-icons {
+    float: right;
+    a {
+      position: relative;
+      float: left;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .icon-only{
+      border: 1px solid rgba(20,23,28,.05);
+      width: 45px;
+      border-radius: 50%;
+    }
+    .icon-only:hover{
+        background:  rgba(20,23,28,.05);
+        border-color: rgba(20,23,28,.05);
+
+    }
+  }
+}
+
+// .header-user-profile{
+//   padding: 7px;
+// }

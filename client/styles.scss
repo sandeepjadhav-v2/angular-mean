@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-balham.css';
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+body { margin: 0;  }
+
+.pull-right{
+  float: right;
+}
+
+.card{
+  border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+    border: none;
+    margin-bottom: 30px;
+}
+
+.sidebar .mat-divider{
+  border: 0;
+}

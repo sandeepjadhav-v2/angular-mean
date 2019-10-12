@@ -1,0 +1,53 @@
+<!-- <a routerLink="/">Sign Out</a> -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+        <div class="logo-container">
+          <a class="logo-link">
+            <!-- <img src="./assets/logo/logo-coral.svg" class="logo"> -->
+          </a>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="global-search-container">
+          <div class="input-group">
+            <input type="text" class="form-control global-search-field" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">
+                <fa-icon [icon]="faSearch" class="global-search-icon"></fa-icon>
+              </span>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-4">
+      <ul class="header-notification-container">
+        <li class="notification-icons">
+          <a dropdown triggers="hover"#dp="bs-dropdown">
+             <span dropdownToggle  (mouseleave)="dp.hide()"><fa-icon [icon] = "faUser"></fa-icon> My Account</span>
+              <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" (mouseleave)="dp.hide()"
+                  role="menu" aria-labelledby="button-basic"  >
+                <li role="menuitem"><a class="dropdown-item" href="#">Edit Profile</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+          </a>
+        </li>
+        <li class="notification-icons">
+            <a class="icon-only">
+              <fa-icon [icon] = "faBell"></fa-icon>
+            </a>
+          </li>
+          <li class="notification-icons">
+              <a class="icon-only">
+                <fa-icon [icon] = "faBell"></fa-icon>
+              </a>
+           </li>
+      </ul>
+    </div>
+    <!-- <div class="col-2">
+      <div class="btn-group pull-right header-user-profile"  >
+
+      </div>
+    </div> -->
+  </div>
+</div>
